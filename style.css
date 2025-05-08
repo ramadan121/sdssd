@@ -1,0 +1,532 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+  align-items: center;
+}
+
+.nav-container {
+  max-width: 96%;
+
+  margin: auto;
+}
+.container {
+  max-width: 90%;
+  height: 30em;
+  margin: auto;
+}
+.center {
+  align-items: center;
+  line-height: 3px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  align-items: center;
+}
+ul li {
+  padding: 0 5px;
+}
+.item {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.logo img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+
+.aposts {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+
+  margin: auto;
+  align-items: center;
+}
+.apost {
+  width: 700px;
+  height: auto;
+}
+.cover {
+  border-radius: 5px;
+
+  overflow: hidden;
+  max-width: 80%;
+  max-height: 100%;
+  position: relative;
+}
+
+.cover img {
+  width: 100%;
+  height: 300px;
+  opacity: 0.6;
+}
+.cover::after {
+  content: ""; /* Required for the pseudo-element */
+  background-image: url("./assets/header.png"); /* Path to your smaller image */
+  background-size: contain; /* Adjust to fit the size of the pseudo-element */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  position: absolute; /* Position it absolutely within the cover */
+  top: 40px; /* Position it 10px from the bottom */
+  left: 110px; /* Position it 10px from the right */
+  width: 700px; /* Set a width for the small image */
+  height: 100%; /* Set a height for the small image */
+  z-index: 999; /* Ensure it appears above the main image */
+  overflow: hidden;
+}
+
+.items {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.items .cover-main img {
+  max-width: 400px;
+  margin-inline: auto;
+}
+.items .cover-main img:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+.box {
+  line-height: 1.3rem;
+  margin-top: 0px;
+}
+.box h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.box h1,
+p,
+h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  opacity: 0.5;
+  color: gray;
+}
+.box-1,
+button {
+  margin-top: 10px;
+}
+.btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 14px;
+  background-color: black;
+  color: white;
+}
+.btn:hover {
+  transition: all 0.5s;
+  background-color: transparent;
+  color: gray;
+  opacity: 0.5;
+}
+.fposts {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+
+}
+.fpost {
+
+  width: 100%;
+  align-items: center;
+  height: 400%;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.fpost-box {
+  max-width: 90%;
+  align-items: center;
+max-width: 100%;
+
+  padding: 10px 0;
+}
+.fpost-box h3{
+font-size: 25px;
+}
+.fpost-box h1{
+font-size: 40px;
+}
+.fpost-box p{
+font-size: 20px;
+}
+.box-2 {
+  gap: 10px;
+  max-width: 40%;
+ margin: 10px;
+}
+.box-item {
+
+
+  border: 1px solid gray;
+padding:10px;
+  margin: 9px 0;
+}
+.box-item2 {
+  width: 600px;
+  
+}
+.box-item2 p  {
+ font-size: 20px;
+  
+}
+.box-item2 i {
+ font-size: 15px;
+  
+}
+
+
+.fposts-2{
+  position: relative;
+  color: white;
+  background-color: black;
+padding: 20px;
+width: 100%;
+height:400px;
+  border-radius: 5px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+
+.fpost-box-2 h1{
+  font-size: 40px;
+
+  font-weight: 800;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .items {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .items .logoss {
+  max-width: 30%;
+}
+.footer .items .fcover {
+  max-width: 20%;
+}
+.footer .items .fcover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .items .logoss p {
+  font-size: 20px;
+  color: black;
+  opacity: 1;
+}
+
+.footer .items .nav-lis ul li {
+  font-size: 20px;
+  padding: 2px 0;
+}
+
+.footer .items .email input {
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: gray;
+  border: none;
+  opacity: 0.4;
+}
+
+section {
+  position: relative;
+  margin-top: 110px;
+}
+
+.menu-btn i {
+  color: gray;
+  /* display: none; */
+  padding: 0 10px;
+  font-size: 30px;
+}
+/* @media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .menu-btn i {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    left: -9999px;
+    top: 60px;
+    width: 50%;
+    height: 40vh;
+    border-radius: 5px;
+    z-index: 9999;
+    flex-direction: column;
+    background: #e7cfb6;
+  }
+  .active {
+    left: 0;
+  }
+  .nav-container {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    max-height: 100%;
+    max-width: 100%;
+   
+  position: relative;
+    padding: 20px;
+  }
+  .items{
+    max-height: 100%;
+    max-height: 100%;
+    flex-wrap: wrap;
+  }
+
+.fposts{
+
+
+}
+section {
+  position: relative;
+}
+.fpost{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+} */
+
+
+@media screen and (max-width: 600px) {
+  
+  /* Navigation adjustments */
+  .nav-container{
+    max-width: 100%;
+  }
+  nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    display: none; 
+    z-index: 999;
+  }
+  .menu-btn i {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    right: -9999px;
+    top: 60px;
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+    z-index: 9999;
+    flex-direction: column;
+    overflow: hidden;
+background-color: black;
+
+
+
+  }
+  .active {
+    right: 0;
+  }
+  .container{
+  
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+  
+  /* About section adjustments */
+  .about{
+    max-width: 100%;
+    max-width: 100%;
+  }
+  .about .aposts {
+flex-wrap: wrap;
+
+
+  }
+.about-desc{
+  font-size: 20px;
+}
+.about .cover{
+  max-width: 100%;
+  max-width: 100%;
+}
+  .about .cover img {
+width: 100%;
+
+    object-fit: cover;
+
+  }
+
+  
+  /* Main section adjustments */
+  .main .items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover-main img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  /* Feature section adjustments */
+  .feature .fposts {
+max-width: 100%;
+max-width: 100%;
+  }
+  .feature .fposts .fpost {
+   flex-direction: column;
+      }
+
+.box-2{
+  max-width: 100%;
+  max-height: 100%;
+flex-wrap: wrap;
+
+}
+.box-item2{
+width: 100%;
+height: 100%;
+margin: auto;
+}
+
+
+
+  .box-item {
+    margin: 10px 0;
+  }
+
+  .fposts-2 {
+    max-width: 100%;
+max-height: 100%;
+
+  }
+   .fpost-box-2 h1{
+
+    font-size: 30px;
+   }
+  
+   .fpost-box-2 p{
+
+    font-size: 20px;
+   }
+  
+  /* Footer adjustments */
+  
+  .footer .items {
+    max-width: 100%;
+max-height: 100%;
+flex-wrap: wrap;
+
+
+  }
+  .logoss {
+flex-wrap: wrap;
+width: 500px;
+
+
+  }
+.logoss p{
+font-size: 60px;
+}
+  .nav-lis ul {
+    max-width: 100%;
+    max-height: 100%
+    ;
+  }
+
+  .nav-lis li {
+    margin: 5px 0;
+  }
+
+  .email  {
+    max-width: 100%;
+    max-height: 100%
+    ;
+  }
+}
